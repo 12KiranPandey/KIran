@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travelers</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f1704facaa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="D:\Html\1st webpage\index.css">
+    
+  <style> 
+     .header-nav{
+        width:100%;
+        height: 80px;
+        color:black;
+        position:absolute;
+    }
+    .title{
+      font-size: 30px;
+    }
+    
+    .navp{
+      margin-left: 600px;
+      font-size: 20px;
+    }
+    .navlist{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+  }
+  .nav_link{
+    position: relative;
+  }
+  
+  .nav_link::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0,0,255,0.5);
+    transform: scaleX(0);
+    transform-origin:right ;
+    transition: transform .5s;
+  }
+  .nav_link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+    .textcolor{
+      background-color: white;
+      color:rgba(0,0,0,0.7);
+      font-size: 20px;
+      margin-top: 50px;
+      font-style: sans-serif;
+    }
+    .textimage{
+      margin-top:50px ;
+      
+    }
+    .btn-btn:hover{
+      background-color: rgba(160,82,45,0.8);
+      color:white;
+
+    }
+   .textwhite{
+    background-color: white;
+      color:rgba(0,0,0,0.7);
+      font-size: 20px;
+      margin-top: 50px;
+      font-style: sans-serif;
+   }
+   .imgbreak{
+     height: 280px;
+   }
+   .cardimge{
+     margin-top: 100px;
+   }
+   .btn-btn{
+     background-color: bisque;
+   }
+   .coverimg {
+  background: url(https://www.trekksoft.com/hs-fs/hubfs/annie-spratt-217517-unsplash.jpg?width=3416&name=annie-spratt-217517-unsplash.jpg) no-repeat center; 
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+.featured-places{
+  box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+}
+
+.coverimgtext {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:rgba(0,0,0,0.7)
+}
+.grid1{ 
+   margin-top: 50px;
+}
+.contacttext{
+  color: rgba(0,0,0,0.8);
+  font-size: 25px;
+  margin-top: 40px;
+  margin-left: 50px;
+
+}
+.contact-detail{
+  text-align: center;
+  color:rgba(0,0,0,0.8);
+  margin-top: 50px;
+  font-style: italic;
+}
+h3{
+  color:rgba(0,0,0,0.7);
+  margin-top: 30px; 
+} 
+
+
+  </style> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand title" href="#">
+          <img src="https://www.kindpng.com/picc/m/115-1152314_rapt-travel-company-transparent-free-travel-logo-hd.png" height="60px" width="70px">
+          Travelers</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="font-size:20px; ">
+          <ul class="navbar-nav navlist">
+            <li class="nav-item">
+              <a class="nav-link  nav_link active navhome" aria-current="page" href="travelar.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  nav_link" href="photo-gallery.html" id="navbarDropdown"   aria-expanded="false">   
+                Photo Gallery
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_link " href="toure.html" tabindex="-1" >Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_link" href="login.html">Login</a>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.thetimes.co.uk/travel/wp-content/uploads/sites/6/2022/02/HERO_Hot-air-balloons-over-Uchisar-Castle-cave-houses-in-fairy-chimney-of-Uchisar-near-Goreme-Cappadocia-Nevsehir-Turkey_Credit_Alamy_RME8W7.jpg?w=2200&h=880&crop=1" height="550"class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:white;font-size: 40px;">The Journey of a thousand miles begins with<br>one step</h5>
+            <!-- <p  style="color:white;font-size: 40px;">-Lao Tzu.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.smartertravel.com/wp-content/uploads/2016/08/travel-tourist-photographer-lens-camera-sunset.jpg"height="550px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:aliceblue; font-size: 40px;">“Travel is the only thing <br>you buy that makes you richer” </h5>
+            <!-- <p style="color:aliceblue; font-size: 40px;">_ Anonymous. .</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.hdqwalls.com/download/travel-hd-1366x768.jpg" height="550px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:white;font-size: 40px;">“Live life with no excuses,<br> travel with no regret”</h5>
+            <p style="color:aliceblue; font-size: 40px;"></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-6 p-3  textcolor"><h3>EXPLORE A DIFFERENT<br> WAY TO TRAVEL</h3>
+          <br>
+        <p>
+          Discover new cultures and have a wonderful rest with Backpack Story! Select the country you’d like to visit and provide our agents with estimated time – they’ll find and offer the most suitable tours and hotels.<br><br><br>
+
+During our work we organized countless journeys for our clients. We started as a small tour bureau, and soon we expanded our offers list. Today we have valuable experience travelling and we can advise the most stunning resorts, cities and countries to visit!
+          </p>
+        </div>
+        <div class="col-md-6 p-3 textimage"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhdmVsJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"height="500px" width="100%"></div>
+        
+      </div>
+      </div>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-4  textwhite"><h3 style="text-align:center;">BEST HOTELS</h3>
+          <br>
+          <p>We guarantee the best hotels and very comfortable rooms, which will be appreciated by every traveller. You will be absolutely happy with the hotel and will have a wonderful vacation there.</p>
+          </div>
+          <div class="col-md-4  textwhite"><h3 style="text-align:center;">TOURIST GUIDE</h3><br>
+          <p>
+            We provide our clients with such a service as Tourist Guide. Its main goal is to ensure people with all necessary information any time he needs. This service is similar to Customer Support. 
+          </p>
+          </div>
+          <div class="col-md-4  textwhite"><h3 style="text-align:center;">FLIGHTS TICKETS</h3>
+          <br>
+        <p>
+          You can book tickets on any plane online via our booking system. Here you have an opportunity to select your transport operator. Our representatives will help you with the details.
+        </p>
+        </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-3">
+        <div class="row">
+          <div class="col-md-4 text-white"><img src="https://images.unsplash.com/photo-1616394585067-d3e824140aa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbGxpbmd8ZW58MHx8MHx8&w=1000&q=80" width="100%"></div>
+          <div class="col-md-4  text-white"><div class="imgbreak"><img src="https://media.istockphoto.com/photos/woman-traveler-in-europa-alhambra-in-spain-picture-id1363398400?b=1&k=20&m=1363398400&s=170667a&w=0&h=hzKVF-3_O2h-PcxQ3dSa7hEJno3nd7Qg90DZEsrk-xY=" width="100%" height="295px" ><img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhdmVsJTIwZnJpZW5kc3xlbnwwfHwwfHw%3D&w=1000&q=80" width="100%" style="margin-top:20px;height: 281px;"></div></div>
+          <div class="col-md-4  text-white"><img src="https://images.unsplash.com/photo-1598601065215-751bf8798a2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80" width="100%"></div>
+        </div>
+      </div>
+      <div class="container-fluid mt-3 cardimge">
+        <h2 style= "text-align: center; margin-top: 50px;  font-style: italic;">Start Your Journey</h2>
+        <div class="row" style="margin-top:30px">
+          <div class="col-md-4">
+          <div class="card featured-places" style="width:100%">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-taj-mahal.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Taj Mahal</h4>
+              
+              <a href="#" class="btn btn-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+              <div class="col-md-4">
+                <div class="card featured-places" style="width:100%;">
+                  <img class="card-img-top" src="https://thumbs.dreamstime.com/b/house-boat-kerala-india-13952091.jpg" alt="Card image" style="width:100%;height:258px;" >
+                  <div class="card-body">
+                    <h4 class="card-title">Kerla</h4>
+                    <a href="#" class="btn btn-btn">Book Now</a>
+                  </div>
+                </div>
+              </div>
+             <div class="col-md-4">
+              <div class="card featured-places" style="width:100%;">
+                <img class="card-img-top" src="https://images.thrillophilia.com/image/upload/s--bt8cxd0p--/c_fill,h_775,q_auto,w_1600/f_auto,fl_strip_profile/v1/images/photos/000/012/355/original/1570264650_varanasi_temple3.jpg.jpg?1570264650" alt="Card image" style="width:100%" height="258px">
+                <div class="card-body">
+                  <h4 class="card-title">Banaras</h4>
+                 
+                  <a href="#" class="btn btn-btn">Book now</a>
+                </div>
+              </div>
+            </div>
+            </div>
+   
+    </div>   
+    <div class="container-fluid mt-3 cardimge">
+      <div class="row" style="margin-top:30px">
+        <div class="col-md-4">
+        <div class="card featured-places" style="width:100%">
+          <img class="card-img-top" src="https://media.istockphoto.com/photos/stunning-view-of-the-hawa-mahal-at-sunset-with-blurred-people-walking-picture-id1291961188?b=1&k=20&m=1291961188&s=170667a&w=0&h=ARKtdKKKYeBeN4wCdYzGoExjahezBgwi2-cut6UjEVg="alt="Card image" style="width:100%" height="258">
+          <div class="card-body">
+            <h4 class="card-title">Jaipur</h4>
+            
+            <a href="#" class="btn btn-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+            <div class="col-md-4">
+              <div class="card featured-places" style="width:100%;">
+                <img class="card-img-top" src="https://images.squarespace-cdn.com/content/v1/5a74702ce45a7cd601df944b/1632128271720-6VCJ1MPXEGW35Z5NOMYI/unsplash-image-5vDTocCCutE.jpg?format=1000w" alt="Card image" style="width:100%;height:258px;" >
+                <div class="card-body">
+                  <h4 class="card-title">Uttarakhand</h4>
+                  <a href="#" class="btn btn-btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+           <div class="col-md-4">
+            <div class="card featured-places" style="width:100%;">
+              <img class="card-img-top" src="https://media.istockphoto.com/photos/beautiful-lake-picture-id1218830644?b=1&k=20&m=1218830644&s=170667a&w=0&h=hHSQcCYj_CZvfAet3mfoqfDJ_Zr1DBHimKdys50JQcA=" alt="Card image" style="width:100%" height="258px">
+              <div class="card-body">
+                <h4 class="card-title">Ladakh</h4>
+               
+                <a href="#" class="btn btn-btn">Book now</a>
+              </div>
+            </div>
+          </div>
+          </div>
+ 
+  </div>  
+
+  <div class="row grid1">
+    <div class="col-md-12 ">
+      <div class="coverimg">
+        <div class="coverimgtext">
+          <h2 style="color: white;">Capture Beautiful<br> World</h2>
+          <button style="background-color: rgba(0,0,0,0.6); border-radius:10px; color:white; height: 40px; font-size: 20px; width:150px;border: 1px solid white;">Explore Trip</button>
+        </div>
+      </div>
+    </div>
+   </div> 
+   <div class="container">
+     <h2 class="contact-detail"> Contact Details</h2>
+     <div class="row ">
+      <div class="col-md-4"><h3>Quick Contact</h3>
+        <div style="color:rgba(0,0,0,0.5);font-size: 18px;">Ms.XYZ <br>204 Tej Crest 5th Floor <br>M. G. Road Mumbai(400086)
+        </div>
+     </div>
+      <div class="col-md-4 "><h3>Social Media</h3>
+        <div>
+          <i class="fa-brands fa-instagram" style="color:rgba(0,0,0,0.7); font-size:30px;"></i>
+          <i class="fa-brands fa-facebook" style="color:rgba(0,0,0,0.7); font-size:30px;" ></i>
+          <i class="fa-brands fa-twitter" style="color:rgba(0,0,0,0.7); font-size:30px;"></i>
+        </div>
+      </div>
+      <div class="col-md-4"><h3>Contact Number</h3>
+        <div>
+          <i class="fas fa-phone" style="font-size:15px;color: rgba(0,0,0,0.5);">02285956418</i><br>
+  <i class="fas fa-envelope-open-text" style="font-size:15px;color: rgba(0,0,0,0.5);"> travelar.agency.org</i>
+
+      </div>
+      </div>
+    </div>
+     
+    </div>
+</body>
+</html>

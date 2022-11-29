@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Photo Gallery</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f1704facaa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+         .header-nav{
+        width:100%;
+        height: 80px;
+        color:black;
+        position:absolute;
+    }
+    .title{
+      font-size: 30px;
+    }
+    
+    .navp{
+      margin-left: 600px;
+      font-size: 20px;
+    }
+    .navlist{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+  }
+  .nav_link{
+    position: relative;
+  }
+
+  .nav_link::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0,0,255,0.5);
+    transform: scaleX(0);
+    transform-origin:top;
+    transition: transform .5s;
+  }
+  .nav_link:hover::after{
+    transform: scaleX(1);
+    transform-origin: top;
+  }
+  .imgsize{
+      width:100%;
+      height: auto;
+  }
+  .photo-gallary{
+    background-color: transparent;
+    color:rgba(0,0,0,0.7);
+    text-align: center;
+    font-weight: bold;
+     margin-top:40px;
+  }
+  .photo-gallary:hover{
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color:skyblue;
+  }
+  .photo-gallary-row{
+    margin-top: 30px;
+
+  }
+  .container1 {
+      position: relative;
+    }
+    
+    .image {
+      opacity: 1;
+      width: 100%;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    .container1:hover .image {
+      opacity: 0.3;
+    }
+    
+    .container1:hover .middle {
+      opacity: 1;
+    }
+    
+    .text {
+      background-color: transparent skyblue;
+      color:#334257;
+      font-size: 30px;
+      padding: 16px 32px;
+    }
+    .contacttext{
+  color: rgba(0,0,0,0.8);
+  font-size: 25px;
+  margin-top: 40px;
+  margin-left: 50px;
+
+}
+.contact-detail{
+  text-align: center;
+  color:rgba(0,0,0,0.8);
+  margin-top: 50px;
+  font-style: sans-serif;
+}
+h3{
+  color:rgba(0,0,0,0.7);
+  margin-top: 30px;
+}
+.hero-image {
+  background: url(https://www.pixelstalk.net/wp-content/uploads/2016/03/Sea-nature-side-wallpaper-1080P.jpg) no-repeat center; 
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  margin-top: 40px;
+}
+.hero-text {
+ 
+  position: absolute;
+  margin: 50px;
+  
+
+  
+}
+
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand title" href="#">
+            <img src="https://www.kindpng.com/picc/m/115-1152314_rapt-travel-company-transparent-free-travel-logo-hd.png" height="60px" width="70px">
+            Travelers</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="font-size:20px; ">
+            <ul class="navbar-nav navlist">
+              <li class="nav-item">
+                <a class="nav-link  nav_link active navhome" aria-current="page" href="travelar.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link  nav_link" href="photo-gallery.html" id="navbarDropdown"   aria-expanded="false">
+                  Photo Gallery
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_link " href="toure.html" tabindex="-1" >Tours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_link" href="login.html">Login</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav> 
+<div class="container">
+  <h2  class="photo-gallary"> Our Gallery</h2>
+    <div class="continer">
+        <h3 style="color:rgba(0,0,0,0.7);margin-top:30px;"> LETS TAKE A LOOK AT THE JOURNEY</h3>
+        <div class="row photo-gallary-row">
+            <div class="col-md-3"><img src="https://media.istockphoto.com/photos/view-of-the-kedarnath-temple-lights-at-night-with-mountains-in-the-picture-id1209865783?b=1&k=20&m=1209865783&s=170667a&w=0&h=UE8Q4jwrMe2stWSeBhHSofagW-doerv8rM8iTLxS7V0=" class="imgsize"></div>
+
+            <div class="col-md-3"><img src="https://media.istockphoto.com/photos/taj-mahal-agra-uttar-pradesh-rajasthan-india-asia-picture-id623586586?b=1&k=20&m=623586586&s=170667a&w=0&h=UBxIlw6sNwqFf9qSI2siZHU5QV_s304V7WdNhOJzcVo=" class="imgsize"></div>
+            <div class="col-md-3"><img src="https://media.istockphoto.com/photos/houseboat-in-kerala-picture-id472873512?b=1&k=20&m=472873512&s=170667a&w=0&h=4AYya6hiuSvi3BK6l-uxbthwsvZFvtC3av4Kkm-kdvA="class="imgsize"></div>
+            <div class="col-md-3"><img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/9e/06.jpg" class="imgsize"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top:40px">
+    <h4 style="text-align:center;margin-top: 20px; text-decoration: solid;color:rgba(0,0,0,0.8)">OUR FAVOURITE PLACES</h4>
+    <div class="row " style="margin-top:20px">
+      <div class="col-md-4 container1">
+          <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRyYXZlbGxpbmd8ZW58MHx8MHx8&w=1000&q=80" alt="Avatar" class="image">
+          <div class="middle">
+            <div class="text">Ladakh</div>
+          </div>
+        </div>
+      <div class="col-md-4 container1">
+        <img src="https://images.unsplash.com/photo-1547734482-4640f8efb7d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dW5wbGFzaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text">Kashmir</div>
+        </div>
+      </div>
+      <div class="col-md-4 container1">
+        <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHRyYXZlbCUyMG5hdHVyZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text">Pune</div>
+        </div>
+      </div>
+   </div>
+  </div>
+  <div class="container-fluid hero-image">
+    <div class="hero-text">
+      <h2 style="color:rgba(255,255,255,0.8)">WE PROPOSED TO YOU</h2>
+      <div class="row" style="margin-top:15px;">
+        <div class="col-md-3"><div class="card">
+          <img class="card-img-top" src="https://www.mistay.in/travel-blog/content/images/size/w2000/2018/08/Roadtrips-2.jpg" alt="Card image" style="width:100%;height: 300px;">      <div class="card-body">
+            <h4 class="card-title">Road Trip</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+           
+          </div>
+        </div></div>
+        <div class="col-md-3"><div class="card">
+          <img class="card-img-top" src="https://www.treebo.com/blog/wp-content/uploads/2017/05/Places-to-visit-in-Jaisalmer-1024x680.jpg" alt="Card image" style="width:100%;height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title">Boating</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            
+          </div>
+        </div></div>
+        <div class="col-md-3"><div class="card" >
+          <img class="card-img-top" src="https://media.istockphoto.com/photos/hikers-picture-id492676510?k=20&m=492676510&s=612x612&w=0&h=6yLtsxUkQAJAPoTFw67HYk_Xq64P84nX2wC-dnM3h8U=" alt="Card image" style="width:100%;height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title">Treaking</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            
+          </div>
+        </div></div>
+        <div class="col-md-3"> <div class="card" >
+          <img class="card-img-top" src="https://media.istockphoto.com/photos/woman-standing-near-big-tropical-river-picture-id522001766?k=20&m=522001766&s=612x612&w=0&h=uCxH3z23Z26TT58ZvRtfxQubxO5NePe94kmpFo0RtBo=" alt="Card image" style="width:100%;height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title">Rafting</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+  <div class="container">
+    <h2 class="contact-detail"> Contact Details</h2>
+    <div class="row ">
+     <div class="col-md-4"><h3>Quick Contact</h3>
+       <div style="color:rgba(0,0,0,0.5);font-size: 18px;">Ms.XYZ <br>204 Tej Crest 5th Floor <br>M. G. Road Mumbai(400086)
+       </div>
+    </div>
+     <div class="col-md-4 "><h3>Social Media</h3>
+       <div>
+         <i class="fa-brands fa-instagram" style="color:rgba(0,0,0,0.7); font-size:30px;"></i>
+         <i class="fa-brands fa-facebook" style="color:rgba(0,0,0,0.7); font-size:30px;" ></i>
+         <i class="fa-brands fa-twitter" style="color:rgba(0,0,0,0.7); font-size:30px;"></i>
+       </div>
+     </div>
+     <div class="col-md-4"><h3>Contact Number</h3>
+       <div>
+         <i class="fas fa-phone" style="font-size:20px;color: rgba(0,0,0,0.5);">02285956418</i><br>
+ <i class="fas fa-envelope-open-text" style="font-size:20px;color: rgba(0,0,0,0.5);"> travelar.agency.org</i>
+
+     </div>
+     </div>
+   </div>
+    
+   </div>
+</body>
+</html>
+

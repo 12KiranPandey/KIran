@@ -1,0 +1,48 @@
+body{
+  background-color:azure;
+}
+.overlay{
+  background-color: #000000ab;
+  width: 100%;
+  background-attachment: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.login-div{
+  background-color: transparent;
+  background:rgba(0,0,0,0.6);
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 50px !important;
+  border-radius: 10px !important;
+  padding-bottom: 10px;
+  align-content: center;
+}
+
+
+.login-padding{
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.login-padding h2{
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.login-padding label{
+  color: white;
+}
+.btn-white{ 
+  margin-top: 5px;
+  border: 1px solid white;
+  color: white;
+}
+.btn-white:hover{
+  background: yellowgreen ;
+  color: white;
+}
